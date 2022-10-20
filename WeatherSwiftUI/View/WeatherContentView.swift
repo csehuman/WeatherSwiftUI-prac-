@@ -22,7 +22,7 @@ struct WeatherContentView: View {
                 ScrollView(showsIndicators: false) {
                     VStack {
                         Color.clear
-                        CurrentWeatherView(model: .preview)
+                        CurrentWeatherView(model: service.currentWeather)
                     }
                     .frame(height: reader.size.height)
                     

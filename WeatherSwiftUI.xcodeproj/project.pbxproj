@@ -21,6 +21,9 @@
 		DA77C25429016D0B004E3DB2 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25329016D0B004E3DB2 /* WeatherService.swift */; };
 		DA77C25629016DEC004E3DB2 /* WeatherService+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25529016DEC004E3DB2 /* WeatherService+Location.swift */; };
 		DA77C25A29017AAF004E3DB2 /* String+WeatherSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25929017AAF004E3DB2 /* String+WeatherSymbol.swift */; };
+		DA77C25D29017C0E004E3DB2 /* CodableCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25C29017C0E004E3DB2 /* CodableCurrentWeather.swift */; };
+		DA77C25F29017CAA004E3DB2 /* WeatherService+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25E29017CAA004E3DB2 /* WeatherService+Api.swift */; };
+		DA77C26129017D84004E3DB2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C26029017D84004E3DB2 /* ApiError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		DA77C257290172D0004E3DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DA77C25829017306004E3DB2 /* GangnamStation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GangnamStation.gpx; sourceTree = "<group>"; };
 		DA77C25929017AAF004E3DB2 /* String+WeatherSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WeatherSymbol.swift"; sourceTree = "<group>"; };
+		DA77C25C29017C0E004E3DB2 /* CodableCurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableCurrentWeather.swift; sourceTree = "<group>"; };
+		DA77C25E29017CAA004E3DB2 /* WeatherService+Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+Api.swift"; sourceTree = "<group>"; };
+		DA77C26029017D84004E3DB2 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +112,10 @@
 		DA77C23F29015C47004E3DB2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DA77C25B29017BF6004E3DB2 /* Model */,
 				DA77C25329016D0B004E3DB2 /* WeatherService.swift */,
 				DA77C25529016DEC004E3DB2 /* WeatherService+Location.swift */,
+				DA77C25E29017CAA004E3DB2 /* WeatherService+Api.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -131,6 +139,15 @@
 				DA77C25129016489004E3DB2 /* ForecastView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DA77C25B29017BF6004E3DB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA77C25C29017C0E004E3DB2 /* CodableCurrentWeather.swift */,
+				DA77C26029017D84004E3DB2 /* ApiError.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,15 +221,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA77C25429016D0B004E3DB2 /* WeatherService.swift in Sources */,
+				DA77C25D29017C0E004E3DB2 /* CodableCurrentWeather.swift in Sources */,
 				DA77C25A29017AAF004E3DB2 /* String+WeatherSymbol.swift in Sources */,
 				DA77C24E29016409004E3DB2 /* WeatherContentView.swift in Sources */,
 				DA77C25029016462004E3DB2 /* CurrentWeatherView.swift in Sources */,
 				DA77C24C290163CD004E3DB2 /* BackgroundView.swift in Sources */,
 				DA77C24729015FBB004E3DB2 /* Double+TemperatureString.swift in Sources */,
 				DA77C23129015BDC004E3DB2 /* WeatherSwiftUIApp.swift in Sources */,
+				DA77C26129017D84004E3DB2 /* ApiError.swift in Sources */,
 				DA77C25229016489004E3DB2 /* ForecastView.swift in Sources */,
 				DA77C25629016DEC004E3DB2 /* WeatherService+Location.swift in Sources */,
 				DA77C24529015F08004E3DB2 /* CurrentWeather.swift in Sources */,
+				DA77C25F29017CAA004E3DB2 /* WeatherService+Api.swift in Sources */,
 				DA77C24329015C72004E3DB2 /* MainView.swift in Sources */,
 				DA77C2492901606A004E3DB2 /* Forecast.swift in Sources */,
 			);
