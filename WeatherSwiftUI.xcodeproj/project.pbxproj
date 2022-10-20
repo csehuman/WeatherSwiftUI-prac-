@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		DA77C23129015BDC004E3DB2 /* WeatherSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C23029015BDC004E3DB2 /* WeatherSwiftUIApp.swift */; };
-		DA77C23329015BDC004E3DB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C23229015BDC004E3DB2 /* ContentView.swift */; };
 		DA77C23529015BDE004E3DB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA77C23429015BDE004E3DB2 /* Assets.xcassets */; };
 		DA77C23829015BDE004E3DB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA77C23729015BDE004E3DB2 /* Preview Assets.xcassets */; };
+		DA77C24329015C72004E3DB2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C24229015C72004E3DB2 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA77C22D29015BDC004E3DB2 /* WeatherSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA77C23029015BDC004E3DB2 /* WeatherSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSwiftUIApp.swift; sourceTree = "<group>"; };
-		DA77C23229015BDC004E3DB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA77C23429015BDE004E3DB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA77C23729015BDE004E3DB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA77C24229015C72004E3DB2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,11 @@
 		DA77C22F29015BDC004E3DB2 /* WeatherSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA77C24129015C66004E3DB2 /* View */,
+				DA77C24029015C4F004E3DB2 /* Extension */,
+				DA77C23F29015C47004E3DB2 /* Service */,
+				DA77C23E29015C3C004E3DB2 /* Model */,
 				DA77C23029015BDC004E3DB2 /* WeatherSwiftUIApp.swift */,
-				DA77C23229015BDC004E3DB2 /* ContentView.swift */,
 				DA77C23429015BDE004E3DB2 /* Assets.xcassets */,
 				DA77C23629015BDE004E3DB2 /* Preview Content */,
 			);
@@ -65,6 +68,35 @@
 				DA77C23729015BDE004E3DB2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA77C23E29015C3C004E3DB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA77C23F29015C47004E3DB2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DA77C24029015C4F004E3DB2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DA77C24129015C66004E3DB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA77C24229015C72004E3DB2 /* MainView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA77C23329015BDC004E3DB2 /* ContentView.swift in Sources */,
 				DA77C23129015BDC004E3DB2 /* WeatherSwiftUIApp.swift in Sources */,
+				DA77C24329015C72004E3DB2 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +302,13 @@
 				DEVELOPMENT_TEAM = MF7FTLWYJ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "오늘의 날씨";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +333,13 @@
 				DEVELOPMENT_TEAM = MF7FTLWYJ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "오늘의 날씨";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
