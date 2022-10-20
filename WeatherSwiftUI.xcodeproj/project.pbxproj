@@ -20,6 +20,7 @@
 		DA77C25229016489004E3DB2 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25129016489004E3DB2 /* ForecastView.swift */; };
 		DA77C25429016D0B004E3DB2 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25329016D0B004E3DB2 /* WeatherService.swift */; };
 		DA77C25629016DEC004E3DB2 /* WeatherService+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25529016DEC004E3DB2 /* WeatherService+Location.swift */; };
+		DA77C25A29017AAF004E3DB2 /* String+WeatherSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25929017AAF004E3DB2 /* String+WeatherSymbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		DA77C25529016DEC004E3DB2 /* WeatherService+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+Location.swift"; sourceTree = "<group>"; };
 		DA77C257290172D0004E3DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DA77C25829017306004E3DB2 /* GangnamStation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GangnamStation.gpx; sourceTree = "<group>"; };
+		DA77C25929017AAF004E3DB2 /* String+WeatherSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WeatherSymbol.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DA77C24629015FBB004E3DB2 /* Double+TemperatureString.swift */,
+				DA77C25929017AAF004E3DB2 /* String+WeatherSymbol.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA77C25429016D0B004E3DB2 /* WeatherService.swift in Sources */,
+				DA77C25A29017AAF004E3DB2 /* String+WeatherSymbol.swift in Sources */,
 				DA77C24E29016409004E3DB2 /* WeatherContentView.swift in Sources */,
 				DA77C25029016462004E3DB2 /* CurrentWeatherView.swift in Sources */,
 				DA77C24C290163CD004E3DB2 /* BackgroundView.swift in Sources */,
