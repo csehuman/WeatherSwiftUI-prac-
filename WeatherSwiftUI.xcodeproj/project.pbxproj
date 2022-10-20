@@ -14,6 +14,10 @@
 		DA77C24529015F08004E3DB2 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C24429015F08004E3DB2 /* CurrentWeather.swift */; };
 		DA77C24729015FBB004E3DB2 /* Double+TemperatureString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C24629015FBB004E3DB2 /* Double+TemperatureString.swift */; };
 		DA77C2492901606A004E3DB2 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C2482901606A004E3DB2 /* Forecast.swift */; };
+		DA77C24C290163CD004E3DB2 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C24B290163CD004E3DB2 /* BackgroundView.swift */; };
+		DA77C24E29016409004E3DB2 /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C24D29016409004E3DB2 /* WeatherContentView.swift */; };
+		DA77C25029016462004E3DB2 /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C24F29016462004E3DB2 /* CurrentWeatherView.swift */; };
+		DA77C25229016489004E3DB2 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25129016489004E3DB2 /* ForecastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		DA77C24429015F08004E3DB2 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		DA77C24629015FBB004E3DB2 /* Double+TemperatureString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+TemperatureString.swift"; sourceTree = "<group>"; };
 		DA77C2482901606A004E3DB2 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		DA77C24B290163CD004E3DB2 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		DA77C24D29016409004E3DB2 /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
+		DA77C24F29016462004E3DB2 /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
+		DA77C25129016489004E3DB2 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				DA77C24229015C72004E3DB2 /* MainView.swift */,
+				DA77C24B290163CD004E3DB2 /* BackgroundView.swift */,
+				DA77C24D29016409004E3DB2 /* WeatherContentView.swift */,
+				DA77C24F29016462004E3DB2 /* CurrentWeatherView.swift */,
+				DA77C25129016489004E3DB2 /* ForecastView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA77C24E29016409004E3DB2 /* WeatherContentView.swift in Sources */,
+				DA77C25029016462004E3DB2 /* CurrentWeatherView.swift in Sources */,
+				DA77C24C290163CD004E3DB2 /* BackgroundView.swift in Sources */,
 				DA77C24729015FBB004E3DB2 /* Double+TemperatureString.swift in Sources */,
 				DA77C23129015BDC004E3DB2 /* WeatherSwiftUIApp.swift in Sources */,
+				DA77C25229016489004E3DB2 /* ForecastView.swift in Sources */,
 				DA77C24529015F08004E3DB2 /* CurrentWeather.swift in Sources */,
 				DA77C24329015C72004E3DB2 /* MainView.swift in Sources */,
 				DA77C2492901606A004E3DB2 /* Forecast.swift in Sources */,
