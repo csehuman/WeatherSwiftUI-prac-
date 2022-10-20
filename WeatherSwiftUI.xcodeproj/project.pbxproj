@@ -37,6 +37,8 @@
 		DA77C25129016489004E3DB2 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		DA77C25329016D0B004E3DB2 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		DA77C25529016DEC004E3DB2 /* WeatherService+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+Location.swift"; sourceTree = "<group>"; };
+		DA77C257290172D0004E3DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA77C25829017306004E3DB2 /* GangnamStation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GangnamStation.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +71,14 @@
 		DA77C22F29015BDC004E3DB2 /* WeatherSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA77C257290172D0004E3DB2 /* Info.plist */,
 				DA77C24129015C66004E3DB2 /* View */,
 				DA77C24029015C4F004E3DB2 /* Extension */,
 				DA77C23F29015C47004E3DB2 /* Service */,
 				DA77C23E29015C3C004E3DB2 /* Model */,
 				DA77C23029015BDC004E3DB2 /* WeatherSwiftUIApp.swift */,
 				DA77C23429015BDE004E3DB2 /* Assets.xcassets */,
+				DA77C25829017306004E3DB2 /* GangnamStation.gpx */,
 				DA77C23629015BDE004E3DB2 /* Preview Content */,
 			);
 			path = WeatherSwiftUI;
@@ -338,7 +342,9 @@
 				DEVELOPMENT_TEAM = MF7FTLWYJ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherSwiftUI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "오늘의 날씨";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치에서 날짜 정보를 요청합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -369,7 +375,9 @@
 				DEVELOPMENT_TEAM = MF7FTLWYJ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherSwiftUI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "오늘의 날씨";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치에서 날짜 정보를 요청합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
