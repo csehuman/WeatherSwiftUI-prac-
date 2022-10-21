@@ -24,6 +24,7 @@
 		DA77C25D29017C0E004E3DB2 /* CodableCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25C29017C0E004E3DB2 /* CodableCurrentWeather.swift */; };
 		DA77C25F29017CAA004E3DB2 /* WeatherService+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C25E29017CAA004E3DB2 /* WeatherService+Api.swift */; };
 		DA77C26129017D84004E3DB2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C26029017D84004E3DB2 /* ApiError.swift */; };
+		DA77C26329022B52004E3DB2 /* CodableForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C26229022B52004E3DB2 /* CodableForecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		DA77C25C29017C0E004E3DB2 /* CodableCurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableCurrentWeather.swift; sourceTree = "<group>"; };
 		DA77C25E29017CAA004E3DB2 /* WeatherService+Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+Api.swift"; sourceTree = "<group>"; };
 		DA77C26029017D84004E3DB2 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		DA77C26229022B52004E3DB2 /* CodableForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableForecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				DA77C25C29017C0E004E3DB2 /* CodableCurrentWeather.swift */,
+				DA77C26229022B52004E3DB2 /* CodableForecast.swift */,
 				DA77C26029017D84004E3DB2 /* ApiError.swift */,
 			);
 			path = Model;
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA77C25429016D0B004E3DB2 /* WeatherService.swift in Sources */,
+				DA77C26329022B52004E3DB2 /* CodableForecast.swift in Sources */,
 				DA77C25D29017C0E004E3DB2 /* CodableCurrentWeather.swift in Sources */,
 				DA77C25A29017AAF004E3DB2 /* String+WeatherSymbol.swift in Sources */,
 				DA77C24E29016409004E3DB2 /* WeatherContentView.swift in Sources */,
