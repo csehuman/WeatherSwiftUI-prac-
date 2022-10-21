@@ -17,14 +17,14 @@ extension WeatherService {
         case weather
     }
     
+    @MainActor
     func fetchWeather(location: CLLocation) async {
         do {
-            let fetchedCurrentWeather: CodableCurrentWeather = try await fetch(type: .weather, location: location)
-            currentWeather = CurrentWeather(data: fetchedCurrentWeather)
+            async let fetchedCurrentWeather: CodableCurrentWeather =  fetch(type: .weather, location: location)
+            async let fetchedForecast: CodableForecast =  fetch(type: .forecast, location: location)
             
-            let fetchedForecast: CodableForecast = try await fetch(type: .forecast, location: location)
-            print(fetchedForecast)
-            forecastList = fetchedForecast.list.compactMap {
+            currentWeather = CurrentWeather(data: try await fetchedCurrentWeather)
+            forecastList = try await fetchedForecast.list.compactMap {
                 Forecast(data: $0)
             }
         } catch {
